@@ -1,0 +1,11 @@
+Options -MultiViews
+RewriteEngine On
+
+#RewriteBase provides a URL-path base (not a file-path base) for any relative paths in the rule's target
+#http://stackoverflow.com/questions/21347768/what-does-rewritebase-do-and-how-to-use-it
+RewriteBase /mvc/public
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
