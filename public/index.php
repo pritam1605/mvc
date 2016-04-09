@@ -2,6 +2,6 @@
 
 	require_once '../app/init.php';
 
-	$app = new App();
+	$app = new App();			// clear this doubt
 
 ?>

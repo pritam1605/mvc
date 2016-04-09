@@ -34,6 +34,7 @@
 		}
 
 		protected function parseUrl() {
+			// It will pass the controller class name, method name and the parameters
 			if (isset($_GET['url'])) {
 				$sanatized_url = filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL);
 				return explode('/', $sanatized_url);
