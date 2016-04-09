@@ -1,0 +1,3 @@
+http://code.tutsplus.com/tutorials/getting-clean-with-php--net-6732
+http://corpocrat.com/2012/12/28/php-code-to-filter-input-against-xssinjection-attacks/
+https://www.sitepoint.com/community/t/-get-or--post-vs-filter-input-functions/6600
