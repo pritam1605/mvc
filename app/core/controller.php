@@ -11,6 +11,12 @@
 			return NULL;
 		}
 
+		protected function _view($view, $data = []) {
+			if (isset($view) && file_exists('../app/views/' . $view . '.php')) {
+				require_once '../app/views/' . strtolower($view) . '.php';
+			}
+		}
+
 	}
 
 ?>
